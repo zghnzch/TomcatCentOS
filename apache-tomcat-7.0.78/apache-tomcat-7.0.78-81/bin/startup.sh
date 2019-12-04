@@ -18,6 +18,10 @@
 # -----------------------------------------------------------------------------
 # Start Script for the CATALINA Server
 # -----------------------------------------------------------------------------
+#------------------------------------------ zch add 190215
+export CATALINA_BASE=$CATALINA_2_BASE
+export CATALINA_HOME=$CATALINA_2_HOME
+#------------------------------------------ zch add 19021
 
 # Better OS/400 detection: see Bugzilla 31132
 os400=false

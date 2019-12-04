@@ -103,15 +103,15 @@
 #                   signals. Default is "false" unless running on HP-UX in which
 #                   case the default is "true"
 # -----------------------------------------------------------------------------
-
-# OS specific support.  $var _must_ be set to either true or false.
+#------------------------------------------ zch add 190215
 JAVA_OPTS="-Djava.security.egd=file:/dev/./urandom -server -Xms4096m -Xmx4096m -Xss2048K -XX:PermSize=2048m -XX:MaxPermSize=3072m -Dfile.encoding=UTF-8"
-export JAVA_HOME=/usr/singbonsoft/jdk
-export JRE_HOME=/usr/singbonsoft/jdk/jre
+export JAVA_HOME=/usr/singbon/soft/java/jdk1.7.0_80
+export JRE_HOME=/usr/singbon/soft/java/jdk1.7.0_80/jre
 
 export CATALINA_BASE=$CATALINA_2_BASE
 export CATALINA_HOME=$CATALINA_2_HOME
-
+#------------------------------------------ zch add 19021
+# OS specific support.  $var _must_ be set to either true or false.
 cygwin=false
 darwin=false
 os400=false

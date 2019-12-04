@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<Server port="8006"
+<Server port="8005"
         shutdown="SHUTDOWN">
 	<Listener className="org.apache.catalina.startup.VersionLoggerListener"/>
 	<Listener className="org.apache.catalina.core.AprLifecycleListener"
@@ -32,7 +32,7 @@
 		          minSpareThreads="90"
 		          maxIdleTime="60000"
 		/>
-		<Connector port="81"
+		<Connector port="80"
 		           protocol="org.apache.coyote.http11.Http11NioProtocol"
 		           connectionTimeout="20000"
 		           redirectPort="8443"
@@ -51,7 +51,7 @@
 		<!--executor 采用上面的共享线程池-->
 		<!--connectionTimeout="5000" redirectPort="443" proxyPort="443" executor="tomcatThreadPool"-->
 		<!--URIEncoding="UTF-8"/>-->
-		<!--<Connector port="8010"-->
+		<!--<Connector port="8009"-->
 		<!--           protocol="AJP/1.3"-->
 		<!--           redirectPort="8443"/>-->
 		<Engine name="Catalina"
@@ -70,7 +70,7 @@
 				       suffix=".txt"
 				       pattern="%h %l %u %t &quot;%r&quot; %s %b"/>
 				<Context crossContext="true"
-				         docBase="/usr/singbon/soft/proj190906/ic_card_191118"
+				         docBase="/usr/singbon/soft/proj190514/ic_school"
 				         path="/"
 				         reloadable="false"/>
 			</Host>
